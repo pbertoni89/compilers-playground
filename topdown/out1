@@ -1,0 +1,38 @@
+PROGRAM
+    STAT
+        DEF_STAT
+            ID (People)
+            DEF_LIST
+                ID (name)
+                DOMAIN
+                    STRING
+                ID (surname)
+                DOMAIN
+                    STRING
+                ID (age)
+                DOMAIN
+                    INTEGER
+    STAT
+        ASSIGN_STAT
+            ID (People)
+            TUPLE_CONST
+                SIMPLE_CONST
+                    STRCONST ("Ann")
+                SIMPLE_CONST
+                    STRCONST ("White")
+                SIMPLE_CONST
+                    INTCONST (24)
+            TUPLE_CONST
+                SIMPLE_CONST
+                    STRCONST ("Louis")
+                SIMPLE_CONST
+                    STRCONST ("Red")
+                SIMPLE_CONST
+                    INTCONST (40)
+            TUPLE_CONST
+                SIMPLE_CONST
+                    STRCONST ("Lisa")
+                SIMPLE_CONST
+                    STRCONST ("Green")
+                SIMPLE_CONST
+                    INTCONST (56)

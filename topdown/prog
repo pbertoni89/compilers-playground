@@ -1,0 +1,4 @@
+def R (A: integer, B: string, C: boolean)
+def S (D: integer, E: string)
+R := {(3, "alpha", true)(5, "beta", false)}
+S := {(125, "sun")(236, "moon")}

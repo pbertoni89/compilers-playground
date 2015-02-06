@@ -1,0 +1,2 @@
+def People (name: string, surname: string, age: integer)
+People := {("Ann", "White", 24)("Louis", "Red", 40)("Lisa", "Green", 56)}

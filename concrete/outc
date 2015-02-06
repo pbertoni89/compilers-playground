@@ -1,0 +1,82 @@
+PROGRAM
+    STAT_LIST
+        STAT
+            DEF_STAT
+                ID (R)
+                DEF_LIST
+                    DOMAIN_DECL
+                        ID (A)
+                        DOMAIN
+                            INTEGER
+                    DEF_LIST
+                        DOMAIN_DECL
+                            ID (B)
+                            DOMAIN
+                                STRING
+                        DEF_LIST
+                            DOMAIN_DECL
+                                ID (C)
+                                DOMAIN
+                                    BOOLEAN
+        STAT_LIST
+            STAT
+                DEF_STAT
+                    ID (S)
+                    DEF_LIST
+                        DOMAIN_DECL
+                            ID (D)
+                            DOMAIN
+                                INTEGER
+                        DEF_LIST
+                            DOMAIN_DECL
+                                ID (E)
+                                DOMAIN
+                                    STRING
+            STAT_LIST
+                STAT
+                    ASSIGN_STAT
+                        ID (R)
+                        TUPLE_LIST
+                            TUPLE_CONST
+                                SIMPLE_CONST_LIST
+                                    SIMPLE_CONST
+                                        INTCONST (3)
+                                    SIMPLE_CONST_LIST
+                                        SIMPLE_CONST
+                                            STRCONST ("alpha")
+                                        SIMPLE_CONST_LIST
+                                            SIMPLE_CONST
+                                                BOOLCONST (true)
+                            TUPLE_LIST
+                                TUPLE_CONST
+                                    SIMPLE_CONST_LIST
+                                        SIMPLE_CONST
+                                            INTCONST (5)
+                                        SIMPLE_CONST_LIST
+                                            SIMPLE_CONST
+                                                STRCONST ("beta")
+                                            SIMPLE_CONST_LIST
+                                                SIMPLE_CONST
+                                                    BOOLCONST (false)
+                                TUPLE_LIST
+                STAT_LIST
+                    STAT
+                        ASSIGN_STAT
+                            ID (S)
+                            TUPLE_LIST
+                                TUPLE_CONST
+                                    SIMPLE_CONST_LIST
+                                        SIMPLE_CONST
+                                            INTCONST (125)
+                                        SIMPLE_CONST_LIST
+                                            SIMPLE_CONST
+                                                STRCONST ("sun")
+                                TUPLE_LIST
+                                    TUPLE_CONST
+                                        SIMPLE_CONST_LIST
+                                            SIMPLE_CONST
+                                                INTCONST (236)
+                                            SIMPLE_CONST_LIST
+                                                SIMPLE_CONST
+                                                    STRCONST ("moon")
+                                    TUPLE_LIST

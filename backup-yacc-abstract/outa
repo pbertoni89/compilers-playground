@@ -1,0 +1,54 @@
+PROGRAM
+    STAT
+        DEF_STAT
+            ID (R)
+            DEF_LIST
+                ID (A)
+                DOMAIN
+                    INTEGER
+                ID (B)
+                DOMAIN
+                    STRING
+                ID (C)
+                DOMAIN
+                    BOOLEAN
+    STAT
+        DEF_STAT
+            ID (S)
+            DEF_LIST
+                ID (D)
+                DOMAIN
+                    INTEGER
+                ID (E)
+                DOMAIN
+                    STRING
+    STAT
+        ASSIGN_STAT
+            ID (R)
+            TUPLE_CONST
+                SIMPLE_CONST
+                    INTCONST (3)
+                SIMPLE_CONST
+                    STRCONST ("alpha")
+                SIMPLE_CONST
+                    BOOLCONST (true)
+            TUPLE_CONST
+                SIMPLE_CONST
+                    INTCONST (5)
+                SIMPLE_CONST
+                    STRCONST ("beta")
+                SIMPLE_CONST
+                    BOOLCONST (false)
+    STAT
+        ASSIGN_STAT
+            ID (S)
+            TUPLE_CONST
+                SIMPLE_CONST
+                    INTCONST (125)
+                SIMPLE_CONST
+                    STRCONST ("sun")
+            TUPLE_CONST
+                SIMPLE_CONST
+                    INTCONST (236)
+                SIMPLE_CONST
+                    STRCONST ("moon")

@@ -1,0 +1,59 @@
+all: amb calc calc2 calc3 calc4 calcE calc_4_59
+
+amb: amb.o
+	cc -g -o amb amb.o
+
+calc: calc.o
+	cc -g -o calc calc.o
+
+calc2: calc2.o
+	cc -g -o calc2 calc2.o
+
+calc3: calc3.o
+	cc -g -o calc3 calc3.o
+
+calc4: calc4.o
+	cc -g -o calc4 calc4.o
+
+calcE: calcE.o
+	cc -g -o calcE calcE.o
+
+amb.o: amb.c
+	cc -g -c amb.c
+
+amb.c: amb.y
+	bison -v -o amb.c amb.y 
+
+calc.o: calc.c
+	cc -g -c calc.c
+
+calc.c: calc.y
+	bison -v -o calc.c calc.y 
+
+calc2.o: calc2.c
+	cc -g -c calc2.c
+
+calc2.c: calc2.y
+	bison -v -o calc2.c calc2.y 
+
+calc3.o: calc3.c
+	cc -g -c calc3.c
+
+calc3.c: calc3.y
+	bison -v -o calc3.c calc3.y 
+
+calc4.o: calc4.c
+	cc -g -c calc4.c
+
+calc4.c: calc4.y
+	bison -v -o calc4.c calc4.y 
+
+calcE.o: calcE.c
+	cc -g -c calcE.c
+	bison -d -v -o calcE.c calcE.y
+
+clean:
+	rm -rf *.o*
+	rm -rf *.c
+	rm -rf *.output
+	rm -rf amb calc calc2 calc3 calc4 calcE
